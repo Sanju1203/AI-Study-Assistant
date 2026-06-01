@@ -1,0 +1,19 @@
+# Jekyll configuration for GitHub Pages
+# Exclude node_modules and other build artifacts from processing
+
+exclude:
+  - node_modules
+  - server/node_modules
+  - .git
+  - .gitignore
+  - vendor
+  - .github
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - Gemfile
+  - Gemfile.lock
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-primer
