@@ -1,20 +1,57 @@
 # AI Study Assistant
 
-An AI-powered study management application built using the MERN Stack.
+AI Study Assistant is a full-stack MERN application designed to help students manage their studies efficiently. The application provides features such as note management, flashcards, quizzes, study planning, and AI-powered assistance.
 
 ## Features
 
-- User Authentication (Register/Login)
-- Notes Management
-- Flashcards Management
-- Quiz Management
-- Study Planner
-- AI Study Assistant Chat
-- Dashboard Statistics
-- Search Notes
-- Search Flashcards
-- Protected Routes
-- MongoDB Database Storage
+### Authentication
+
+* User Registration
+* User Login
+* JWT Authentication
+* Protected Routes
+* Logout Functionality
+
+### Notes Management
+
+* Create Notes
+* Edit Notes
+* Delete Notes
+* Search Notes
+
+### Flashcards
+
+* Create Flashcards
+* Edit Flashcards
+* Delete Flashcards
+* Search Flashcards
+
+### Quiz Management
+
+* Create Quizzes
+* Attempt Quizzes
+* Delete Quizzes
+
+### Study Planner
+
+* Create Tasks
+* Mark Tasks as Completed
+* Delete Tasks
+* Track Progress
+
+### Dashboard
+
+* Total Notes Count
+* Total Flashcards Count
+* Total Quizzes Count
+* Completed Tasks Count
+* Pending Tasks Count
+
+### AI Assistant
+
+* Ask Study-Related Questions
+* Receive AI-Powered Responses
+* Chat History Support
 
 ---
 
@@ -22,60 +59,63 @@ An AI-powered study management application built using the MERN Stack.
 
 ### Frontend
 
-- React.js
-- Vite
-- Tailwind CSS
-- Axios
-- React Router DOM
+* React.js
+* Vite
+* Tailwind CSS
+* Axios
+* React Router DOM
+* Framer Motion
 
 ### Backend
 
-- Node.js
-- Express.js
-- MongoDB Atlas
-- Mongoose
-- JWT Authentication
-- bcryptjs
+* Node.js
+* Express.js
+* MongoDB Atlas
+* Mongoose
+* JWT
+* bcryptjs
 
-### AI
+### AI Integration
 
-- OpenAI API
+* OpenAI API
 
 ---
 
 ## Project Structure
 
-AI Study Assistant
+AI Study Assistant/
 
-├── client
+├── client/
 
-│ ├── src
+│ ├── src/
 
-│ ├── components
+│ ├── components/
 
-│ ├── pages
+│ ├── pages/
 
-│ ├── services
+│ ├── services/
 
 │ └── App.jsx
 
 │
 
-├── server
+├── server/
 
-│ ├── controllers
+│ ├── controllers/
 
-│ ├── models
+│ ├── middleware/
 
-│ ├── routes
+│ ├── models/
 
-│ ├── middleware
+│ ├── routes/
 
 │ └── index.js
 
 │
 
-└── README.md
+├── README.md
+
+└── .gitignore
 
 ---
 
@@ -83,80 +123,78 @@ AI Study Assistant
 
 ### Clone Repository
 
-```bash
-git clone https://github.com/YOUR_USERNAME/AI-Study-Assistant.git
-```
+git clone https://github.com/Sanju1203/AI-Study-Assistant.git
 
-### Frontend
+### Frontend Setup
 
-```bash
 cd client
 
 npm install
 
 npm run dev
-```
 
-### Backend
+### Backend Setup
 
-```bash
 cd server
 
 npm install
 
 npm run dev
-```
 
-### Environment Variables
+---
 
-Create:
+## Environment Variables
 
-```env
+Create a file named:
+
 server/.env
-```
 
-Add:
+Add the following:
 
-```env
 PORT=5001
 
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
 
-JWT_SECRET=your_secret_key
+JWT_SECRET=YOUR_SECRET_KEY
 
-OPENAI_API_KEY=your_openai_api_key
-```
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 
 ---
 
 ## Screenshots
 
-Add screenshots after project completion.
+Add screenshots here after project completion:
 
-Examples:
-
-- Login Page
-- Dashboard
-- Notes
-- Flashcards
-- Quiz
-- Planner
-- AI Chat
+* Login Page
+* Dashboard
+* Notes Page
+* Flashcards Page
+* Quiz Page
+* Planner Page
+* AI Chat Page
 
 ---
 
 ## Future Improvements
 
-- File Uploads
-- AI Quiz Generation
-- AI Flashcard Generation
-- Dark Mode
-- Study Analytics
+* Dark Mode
+* AI Quiz Generator
+* AI Flashcard Generator
+* Profile Management
+* File Upload Support
+* Study Analytics Dashboard
 
 ---
 
 ## Author
 
-Sanju
+Sanjith
 
-Software Developer
+GitHub:
+https://github.com/Sanju1203
+
+---
+
+## License
+
+This project is created for educational and portfolio purposes.
