@@ -17,6 +17,14 @@ const messageSchema =
 
       required: true
 
+    },
+
+    language: {
+
+      type: String,
+
+      default: "General"
+
     }
 
   })
