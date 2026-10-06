@@ -369,13 +369,13 @@ export const deleteTask = async (
 
 // SEND AI MESSAGE
 export const sendAIMessage =
-  async (message) => {
+  async (message, learningContext) => {
 
     const response = await API.post(
 
       "/ai/chat",
 
-      { message },
+      { message, ...learningContext },
 
       getTokenConfig()
 
@@ -387,13 +387,16 @@ export const sendAIMessage =
 
 // GET CHAT HISTORY
 export const getChatHistory =
-  async () => {
+  async (language) => {
 
     const response = await API.get(
 
       "/ai/history",
 
-      getTokenConfig()
+      {
+        ...getTokenConfig(),
+        params: { language }
+      }
 
     )
 

@@ -32,10 +32,10 @@ export default function QuickActions() {
         </Link>
 
         <Link
-          to="/ai-chats"
+          to="/aichats"
           className="bg-green-500 text-white p-4 rounded-xl text-center font-semibold hover:opacity-90"
         >
-          AI Chat
+          Language Tutor
         </Link>
 
       </div>
